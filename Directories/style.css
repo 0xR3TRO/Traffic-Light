@@ -1,0 +1,50 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #f0f0f0;
+}
+
+.traffic-light {
+	width: 100px;
+	background-color: #333;
+	border-radius: 20px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.light {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: #555;
+	opacity: 0.2;
+	transition: background-color 0.5s, opacity 0.5s;
+	margin: 10px auto;
+}
+
+.light.red {
+	background-color: red;
+}
+
+.light.yellow {
+	background-color: yellow;
+}
+
+.light.green {
+	background-color: green;
+}
+
+.active {
+	opacity: 1;
+}
